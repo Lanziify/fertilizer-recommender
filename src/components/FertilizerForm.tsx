@@ -29,7 +29,7 @@ import cotton from '../assets/crops/cotton.jpg'
 import rice from '../assets/crops/rice.jpg'
 import wheat from '../assets/crops/wheat.jpg'
 import maize from '../assets/crops/maize.jpg'
-import masoor from '../assets/crops/masoor.jpg'
+// import masoor from '../assets/crops/masoor.jpg'
 import soybean from '../assets/crops/soybean.jpg'
 import ginger from '../assets/crops/ginger.jpg'
 import turmeric from '../assets/crops/turmeric.jpg'
@@ -42,8 +42,6 @@ interface FormValues {
   phosphorus: string | number
   potassium: string | number
   pH: string | number
-  rainfall: string | number
-  temperature: string | number
 }
 
 function FertilizerForm() {
@@ -93,12 +91,8 @@ function FertilizerForm() {
       imgsrc: wheat,
     },
     {
-      name: 'Maize',
+      name: 'Corn',
       imgsrc: maize,
-    },
-    {
-      name: 'Masoor',
-      imgsrc: masoor,
     },
     {
       name: 'Soybean',
@@ -130,14 +124,6 @@ function FertilizerForm() {
     {
       name: 'pH',
       placeholder: 'pH',
-    },
-    {
-      name: 'rainfall',
-      placeholder: 'Rainfall',
-    },
-    {
-      name: 'temperature',
-      placeholder: 'Temperature',
     },
   ]
 
@@ -263,7 +249,6 @@ function FertilizerForm() {
                           },
                           overflow: 'hidden',
                         }}
-                        
                         onClick={() => {
                           if (isResponseContentEmpty()) return
                           setFieldValue('crop', index)

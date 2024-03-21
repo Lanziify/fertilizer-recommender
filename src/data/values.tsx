@@ -4,7 +4,5 @@ export const formInitialValues = {
   phosphorus: '',
   potassium: '',
   pH: '',
-  rainfall: '',
-  temperature: '',
   crop: '',
 }

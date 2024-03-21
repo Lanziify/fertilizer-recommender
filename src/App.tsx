@@ -66,7 +66,7 @@ const App = () => {
           </Heading>
           <Text>
             Are you ready to unlock the full potential of your garden or farm?
-            Look no further! Fertilize Recommender is here to revolutionize the
+            Look no further! Fertilizer Recommender is here to revolutionize the
             way you approach fertilization. Our cutting-edge platform leverages
             advanced algorithms and expert knowledge to provide you with
             personalized fertilizer recommendations tailored to your specific

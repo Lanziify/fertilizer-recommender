@@ -26,16 +26,6 @@ export  const formValidatoinSchemna = yup.object().shape({
     .typeError('Invalid input type. Please try again.')
     .required('Please provide the pH level')
     .min(6.5, 'Current value does not meet the minimum level required'),
-  rainfall: yup
-    .number()
-    .typeError('Invalid input type. Please try again.')
-    .required('Please provide the rainfall value')
-    .min(1, 'Current value does not meet the minimum level required'),
-  temperature: yup
-    .number()
-    .typeError('Invalid input type. Please try again.')
-    .required('Please provide the temperature value')
-    .min(-37, 'Current value does not meet the minimum level required'),
   crop: yup
     .number()
     .typeError('Invalid input type. Please try again.')
